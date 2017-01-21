@@ -10,6 +10,17 @@
 
 class Yodel
 
+  attr_reader :segment, :count
+
+  def initialize(segment:, count:)
+    @segment = segment
+    @count = count
+  end
+
+  def articulate
+    complete = @segment * @count
+  end
+
 end
 
 
