@@ -2,6 +2,26 @@
 
 def palindrome?(string)
 
+var1 = string.split('')
+i = (var1.count) - 1
+var2 = []
+
+var1.each do |letter|
+  var2[i] = letter
+  i -= 1
+end
+if var2 == var1
+  true
+else
+  false
+end
+ 
+# string.each do |letter|
+
+#   var = 
+
+# end
+
 end
 
 # Driver code - don't touch anything below this line.
