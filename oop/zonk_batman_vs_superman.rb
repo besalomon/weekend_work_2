@@ -17,7 +17,8 @@
 
 class Superhero
 
-  attr_accessor :name, :hitpoints, :alive, :has_special_tool, :hit 
+  attr_reader :name
+  attr_accessor :hitpoints, :alive, :has_special_tool, :hit 
 
   def initialize(data)
     @name = data[:name]
@@ -40,7 +41,8 @@ class Superhero
       return true  
     end 
   end 
-   def hit(var)
+
+  def hit(var)
     return var.hitpoints = var.hitpoints - @attack
   end 
 
